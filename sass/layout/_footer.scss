@@ -1,0 +1,15 @@
+.footer {
+    background-color: var(--dark-bg-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer__section {
+    display: flex;
+    align-items: baseline;
+    /*gap: 70px;*/
+}
+
+.footer__logo {
+    margin-right: 0;
+}

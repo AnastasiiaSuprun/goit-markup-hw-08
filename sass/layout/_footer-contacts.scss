@@ -1,0 +1,52 @@
+
+.footer__contacts {
+    margin-right: 70px;
+}
+
+.footer__contacts-adress {
+    font-style: normal;
+    margin-top: 20px;
+}
+
+.footer__item {
+    margin-top: 0;
+    margin-bottom: 0;
+
+    transition: color var(--animation);
+}
+
+.footer__list {
+    margin-bottom: 9px;
+    
+    &:last-child {
+            margin-bottom: 0;
+        }
+}
+
+
+
+.contacts-adress {
+font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+    margin-top: 20px;
+}
+
+.contacts-email,
+.contacts-phone {
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 9px;
+}
+
+.footer-item .link {
+    transition: color var(--animation);
+}
+
+.footer-item .link:hover,
+.link:focus {
+    color: var(--link-txt-cl);
+}
