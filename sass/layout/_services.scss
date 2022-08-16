@@ -1,5 +1,10 @@
 .services {
     padding-bottom: 94px;
+
+    @media screen and (max-width: 1199px) {
+            display: none;
+        }
+   
 }
 
 .services__list {
@@ -7,6 +12,7 @@
     gap: 30px;
     margin-top: 0;
     margin-bottom: 0;
+
 }
 
 .services__item {
