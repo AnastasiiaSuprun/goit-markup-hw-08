@@ -1,12 +1,22 @@
 .container-footer {
-    display: flex;
-    align-items: flex-end;
+    display: block;
+    
     justify-content: center;
+
+    @media screen and (min-width: 1200px) {
+            display: flex;
+           align-items: flex-end;
+        }
+
 }
 
 .footer-form {
-    margin-left: 93px;
-    margin-right: 10px;
+
+    @media screen and (min-width: 1200px) {
+            margin-left: 93px;
+            margin-right: 10px;
+        }
+    
 }
 
 .footer-text {
@@ -14,7 +24,10 @@
 }
 
 .footer-imput {
-    width: 358px;
+    width: 450px;
+    @media screen and (min-width: 1200px) {
+       width: 358px;
+        }
     height: 50px;
     padding: 15px;
     background-color: transparent;
@@ -36,6 +49,16 @@
 .footer-button {
     display: flex;
     text-align: center;
+    justify-content: center;
+
+    @media screen and (max-width: 1199px) {
+            margin-left: auto;
+            margin-right: auto;
+
+            margin-top: 20px;
+        }
+
+
     padding: 10px 28px;
     gap: 8px;
 
