@@ -1,7 +1,13 @@
 .functional__project {
     display: flex;
     gap: 8px;
-    justify-content: center;
+    flex-wrap: wrap;
+    
+    justify-content: flex-start;
+
+    @media screen and (min-width: 768px) {
+            justify-content: center;
+        }
     margin-top: 0;
     margin-bottom: 50px;
 }

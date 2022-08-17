@@ -5,7 +5,9 @@
     margin-top: 0;
     margin-bottom: 0;
     gap: 30px;
+
 }
+
 
 .functional__about-link {
     display: block;
@@ -29,6 +31,7 @@
 }
 
 
+
 .project-wrapper {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -43,6 +46,18 @@
 .project-thumb {
     position: relative;
     overflow: hidden;
+}
+.project-image {
+    width: 450px;
+    height: 294px;
+
+    @media screen and (min-width: 768px) {
+            width: 354px;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            width: 370px;
+        }
 }
 
 .overlay-project {

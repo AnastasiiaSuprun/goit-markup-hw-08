@@ -26,11 +26,16 @@
 
   <body>
     <!-- Header section  -->
- <!--   <header class="header" data-header>
+    <header class="header" data-header>
       <div class="container header__container">
         <a class="logo header__logo link" href="">
           <span class="logo-text">Web</span><span class="logo-text-second-black">Studio</span>
         </a>
+        <button class="menu-btn" type="button">
+          <svg width="40" height="40">
+            <use href="./image/icon/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
         <nav class="nav">
           <ul class="nav__list list">
             <li class="nav__item">
@@ -66,17 +71,17 @@
           </li>
         </ul>
       </div>
-    </header>-->
+    </header>
     <!-- Main section -->
     <main>
       <!-- Hero section -->
-    <!--     <section class="hero overlay">
+      <section class="hero overlay">
         <div class="container hero__container">
           <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
           <button class="hero__btn" type="button" data-modal-open>Заказать услугу</button>
         </div>
       </section>
-    -->
+
       <!-- Features section -->
       <section class="features" id="features">
         <!-- Логічний підзаголовок -->
@@ -131,7 +136,7 @@
         </div>
       </section>
       <!-- Services section -->
-    <section class="services">
+      <section class="services">
         <div class="container">
           <h2 class="second-title">Чем мы занимаемся</h2>
           <ul class="services__list list">
@@ -451,7 +456,7 @@
         </div>
       </section>
       <!-- Clients section -->
-     <section class="section clients">
+      <section class="section clients">
         <div class="container">
           <h2 class="second-title">Постоянные клиенты</h2>
           <ul class="clients__list list">
@@ -537,9 +542,9 @@
         </div>
       </section>
     </main>
- 
-  <!--  Footer section -->
-     <footer class="footer" id="contacts">
+
+    <!--  Footer section -->
+    <footer class="footer" id="contacts">
       <div class="container footer__section">
         <div class="footer__contacts">
           <a class="footer__logo link" href="">
@@ -637,9 +642,8 @@
       </div>
     </footer>
 
-
     <!-- Modal section -->
-    <!--   <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-btn" data-modal-close>
           <svg class="modal-btn-icon" width="11" height="11">
@@ -701,6 +705,51 @@
 
           <button class="register-form-btn" type="submit">Відправити</button>
         </form>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="menu-overlay">
+      <div class="menu-container">
+        <ul class="mobile-nav list">
+          <li class="mobile-nav-item">
+            <a href="" class="mobile-link link">Студия</a>
+          </li>
+          <li class="mobile-nav-item">
+            <a href="" class="mobile-link link">Портфолио</a>
+          </li>
+          <li class="mobile-nav-item">
+            <a href="" class="mobile-link link">Контакты</a>
+          </li>
+        </ul>
+        <div class="mobile-contacts">
+          <ul class="mobile-contacts-call list">
+            <li class="mobile-contacts-item">
+              <a class="mobile-contacts-link menu-phone link" href="+380961111111"
+                >+38 096 111 11 11</a
+              >
+            </li>
+            <li class="mobile-contacts-item">
+              <a class="mobile-contacts-link link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </div>
+        <ul class="mobile-socilas list">
+          <li class="mobile-socilas-item">
+            <a href="" class="mobile-socilas-link link">Instagram</a>
+          </li>
+          <li class="mobile-socilas-item">
+            <a href="" class="mobile-socilas-link link">Twitter</a>
+          </li>
+          <li class="mobile-socilas-item">
+            <a href="" class="mobile-socilas-link link">Facebook</a>
+          </li>
+          <li class="mobile-socilas-item">
+            <a href="" class="mobile-socilas-link link">LinkedIn</a>
+          </li>
+        </ul>
       </div>
     </div>
     <script src="./js/modal.js"></script>
