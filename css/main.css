@@ -639,6 +639,8 @@ img {
 @media screen and (min-width: 1200px) {
   .header__logo {
     margin-right: 93px;
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
 
@@ -716,9 +718,11 @@ img {
 @media screen and (min-width: 768px) {
   .header__contacts {
     display: block;
-    text-align: left;
-    margin-top: 0;
-    margin-bottom: 0;
+    gap: 10px;
+    /* text-align: left;
+     margin-top: 0;
+     margin-bottom: 0;
+     */
   }
 }
 @media screen and (min-width: 1200px) {
@@ -749,11 +753,6 @@ img {
   transition: color var(--animation);
 }
 
-@media screen and (min-width: 768px) {
-  .header__contacts__item:last-child {
-    margin-bottom: 10px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .header__contacts__item:last-child {
     margin-bottom: 0px;
