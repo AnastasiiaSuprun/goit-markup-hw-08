@@ -69,17 +69,17 @@ img {
 }
 @media screen and (min-width: 480px) {
   .container {
-    max-width: 480px;
+    width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 768px;
+    width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
-    max-width: 1200px;
+    width: 1200px;
   }
 }
 
@@ -1300,7 +1300,7 @@ img {
 }
 
 .footer-imput {
-  width: 450px;
+  width: 100%;
   height: 50px;
   padding: 15px;
   background-color: transparent;
@@ -1311,6 +1311,11 @@ img {
   color: #ffffff;
   -webkit-transition: border-color var(--animation);
   transition: border-color var(--animation);
+}
+@media screen and (min-width: 768px) {
+  .footer-imput {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer-imput {
