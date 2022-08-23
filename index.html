@@ -32,7 +32,7 @@
           <span class="logo-text">Web</span><span class="logo-text-second-black">Studio</span>
         </a>
         <button class="menu-btn" type="button" data-menu-open>
-          <svg width="40" height="40">
+          <svg class="menu-icon" width="40" height="40">
             <use href="./image/icon/icons.svg#icon-menu"></use>
           </svg>
         </button>
@@ -141,18 +141,39 @@
           <h2 class="second-title">Чем мы занимаемся</h2>
           <ul class="services__list list">
             <li class="services__item">
-              <img
+
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./image/service/img-1.jpg 1x, ./image/service/img-1_2x-lg.jpg 2x"
+                />
+  
+  
+                <img class="service-img" src="./image/service/img-1.jpg" alt="Разработка проэкта" />
+              </picture>
+            <!--  <img
                 class="service-img"
                 src="./image/service/img-2.jpg"
                 alt="Разработка проэкта"
                 width="370"
                 height="294"
-              />
+              />-->
               <div class="services__img-over">
                 <h3 class="services__img-title">Десктопные приложения</h3>
               </div>
             </li>
             <li class="services__item">
+
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./image/service/img-2.jpg 1x, ./image/service/img-2_2x-lg.jpg 2x"
+                />
+  
+  
+                <img class="service-img" src="./image/service/img-2.jpg" alt="Мобильные приложения" />
+              </picture>
+              <!-- 
               <img
                 class="service-img"
                 src="./image/service/img-3.jpg"
@@ -160,11 +181,24 @@
                 width="370"
                 height="294"
               />
+              -->
               <div class="services__img-over">
                 <h3 class="services__img-title">Мобильные приложения</h3>
               </div>
             </li>
             <li class="services__item">
+
+              
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./image/service/img-3.jpg 1x, ./image/service/img-3_2x-lg.jpg 2x"
+                />
+  
+  
+                <img class="service-img" src="./image/service/img-3.jpg" alt="Планирование" />
+              </picture>
+ <!--
               <img
                 class="service-img"
                 src="./image/service/img-1.jpg"
@@ -172,6 +206,8 @@
                 width="370"
                 height="294"
               />
+
+            -->
               <div class="services__img-over">
                 <h3 class="services__img-title">Дизайнерские решения</h3>
               </div>
@@ -841,16 +877,17 @@
     </div>
 
     <!-- Mobile menu -->
+
     <div class="menu-overlay is-hidden" data-menu>
       <div class="menu-container is-open">
         <button class="menu-btn" type="button" data-menu-close>
-          <svg width="40" height="40">
+          <svg class="menu-close-icon" width="40" height="40">
             <use href="./image/icon/icons.svg#icon-close_menu"></use>
           </svg>
         </button>
         <ul class="mobile-nav list">
           <li class="mobile-nav-item">
-            <a href="#features" class="mobile-link link">Студия</a>
+            <a href="#features" class="mobile-link mobile-link-current link">Студия</a>
           </li>
           <li class="mobile-nav-item">
             <a href="portfolio.html" class="mobile-link link">Портфолио</a>
@@ -889,6 +926,9 @@
         </ul>
       </div>
     </div>
+
+
+    
     <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>
     <script src="./js/header-scroll.js"></script>
